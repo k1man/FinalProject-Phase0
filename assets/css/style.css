@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+	min-height: 60vh;
+    margin: 0;
+    transition: background 0.3s linear, color 0.3s linear;
+}
+
+body.dark {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+label {
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s linear;
+}
+
+#toggle {
+    visibility: hidden;
+}
+
+body.dark label {
+    background-color: #fff;
+}
+
+.form {
+    background-color: #1f1f1f;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(48, 45, 45, 0.3);
+	overflow: hidden;
+	width: 500px;
+    max-width: 100%;
+}
+
+body.dark .form {
+    background-color: whitesmoke;
+}
+
+h1 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+}
+
+body.dark h1 {
+    color: #1f1f1f;
+}
+
+.title{
+	color: #8e44ad;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: #8e44ad;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+body.dark .item {
+    border-bottom: 4px solid #8e44ad;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+body.dark .item_input {
+    color: #8e44ad;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: #8e44ad;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
